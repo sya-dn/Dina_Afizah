@@ -1,0 +1,197 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#d2b48c;
+            color: #333;
+        }
+
+        header {
+            background-color: #6f4f1f;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+    color: white; /* Warna teks standar */
+    text-decoration: none; /* Menghapus garis bawah */
+    font-size: 1rem; /* Ukuran font */
+    padding: 0.5rem 1rem; /* Memberikan ruang dalam */
+    border-radius: 5px; /* Menambahkan sudut tumpul */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi */
+    }
+
+    nav a:hover {
+    background-color: #f5f5dc; /* Warna latar belakang saat hover */
+    color: #333; /* Mengubah warna teks saat hover */
+    transform: scale(1.1); /* Membesarkan sedikit saat hover */
+    }
+
+    nav a:active {
+    background-color: #f5f5dc; /* Warna latar belakang saat aktif (klik) */
+    transform: scale(0.95); /* Menyusut sedikit saat klik */
+    }
+
+
+    /* Styling untuk home */
+        #home {
+    padding: 5rem 5rem;
+    text-align: left;
+    background-color: #f5f5dc;
+    border-radius: 8px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1000px;
+    }
+
+     #home h2 {
+        font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #6f4f1f; /* Mocca */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+    #home h2:hover {
+    color: #ffcc00; /* Ganti warna teks saat hover */
+    transform: scale(1.1); /* Membesarkan teks sedikit */
+}
+
+     #home p {
+        font-family: 'Dancing Script', cursive;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+    #home p:hover {
+    color: #ffcc00; /* Ganti warna teks saat hover */
+    transform: scale(1.1); /* Membesarkan teks sedikit */
+}
+    #home ul {
+        font-family: 'Dancing Script', cursive;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+    #home ul:hover {
+    color: #ffcc00; /* Ganti warna teks saat hover */
+    transform: scale(1.1); /* Membesarkan teks sedikit */
+}
+    .banner {
+    position: relative;
+}
+
+    .banner img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    position: absolute; /* Mengatur posisi absolut */
+    bottom: 0px; /* Meletakkan di bawah */
+    right: 0px; /* Meletakkan di kanan */
+}
+
+
+
+
+
+/* Styling untuk menu section */
+#menu {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-category {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.menu-category h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-item span {
+    font-size: 18px;
+}
+
+.menu-item span:last-child {
+    font-weight: bold;
+}
+
+
+/* Styling untuk contact */
+    #contact {
+    padding: 5rem 5rem;
+    text-align: left;
+    background-color: #f5f5dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1000px;
+    }
+    #contact h1 {
+        font-family: 'Dancing Script', cursive;
+
+    color: #6f4f1f; /* Mocca */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+     #contact p {
+        font-family: 'Dancing Script', cursive;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+    #contact a:hover {
+        color: #005f8d;
+    }
+
+/* Styling untuk address */
+    #address {
+    padding: 5rem 5rem;
+    text-align: left;
+    background-color: #f5f5dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1000px;
+    }
+
+
+
+
+
+
+/* Animasi fade-in untuk lebih smooth saat section berganti */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+        

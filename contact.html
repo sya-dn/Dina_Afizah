@@ -22,15 +22,36 @@
             WhatsApp: +62 821 9200 0880/+62 857 5634 6125<br>
             <a href="https://instagram.com/mryess.coffee" target="_blank">Follow Mr Yess on Instagram</a>
         </p>
-        <form action="submit_contact.php" method="post">
+        <h1>Form Pemesanan</h1>
+        <form id="orderForm">
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name" required>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
             <label for="message">Pesan:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Kirim</button>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" id="submitButton">Kirim</button>
         </form>
+        <p id="confirmationMessage" class="hidden">Terima kasih sudah memesan!</p>
     </section>
+    <script>
+// Select the form and confirmation message element
+const orderForm = document.getElementById("orderForm");
+const confirmationMessage = document.getElementById("confirmationMessage");
+
+// Add an event listener for form submission
+orderForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    // Show confirmation message
+    confirmationMessage.classList.remove("hidden");
+
+    // Optionally, reset the form fields
+    orderForm.reset();
+});
+</script>
 </body>
 </html>

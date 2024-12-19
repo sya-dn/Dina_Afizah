@@ -40,6 +40,8 @@
     /* Styling untuk home */
         #home {
     padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     background-color: #f5f5dc;
     border-radius: 8px;
@@ -141,6 +143,8 @@
 /* Styling untuk contact */
     #contact {
     padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     background-color: #f5f5dc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -167,9 +171,49 @@
         color: #005f8d;
     }
 
+    /* Styling the form elements */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Add space between elements */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    .hidden {
+    display: none;
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+    }
+
 /* Styling untuk address */
     #address {
     padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     background-color: #f5f5dc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -194,4 +238,49 @@
     }
 }
 
-        
+   
+
+/* Media Query untuk tampilan HP */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        font-size: 2rem !important; /* Sesuaikan ukuran teks */
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Ukuran teks lebih kecil */
+        padding: 0.5rem;
+    }
+
+    #home, #contact, #address {
+        padding: 2rem; /* Kurangi padding pada section */
+        width: 95%; /* Lebar hampir penuh layar */
+    }
+
+    #home h2 {
+        font-size: 2rem; /* Ukuran heading lebih kecil */
+    }
+
+    #home p, #home ul {
+        font-size: 1rem;
+    }
+
+    .menu-category {
+        padding: 10px; /* Kurangi padding */
+        font-size: 0.9rem; /* Ukuran teks lebih kecil */
+    }
+
+    .menu-item span {
+        font-size: 0.8rem; /* Sesuaikan teks menu */
+    }
+
+    .banner img {
+        width: 50%; /* Perkecil gambar banner */
+    }
+}
